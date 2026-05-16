@@ -43,5 +43,5 @@ Utility functions and site configuration.
 
 ## Links
 
-- Platform: [modulr.xyz](https://modulr.xyz)
+- Platform: [modulr402.com](https://modulr402.com/)
 - X: [@Modulr402](https://x.com/Modulr402)
