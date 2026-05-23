@@ -10,17 +10,20 @@ export const roadmap: RoadmapQuarter[] = [
       {
         title: "Marketplace Core Architecture",
         description:
-          "Building the scalable frontend and backend structure for Modulr's future marketplace ecosystem, including reusable marketplace systems, scalable routing and long-term infrastructure planning."
+          "Building the scalable frontend and backend structure for Modulr's future marketplace ecosystem, including reusable marketplace systems, scalable routing and long-term infrastructure planning.",
+        completed: true
       },
       {
         title: "Wallet Infrastructure Layer",
         description:
-          "Implementing Phantom, Solflare and MetaMask connectivity with future support for wallet-authenticated purchases, transaction verification and secure digital delivery systems."
+          "Implementing Phantom, Solflare and MetaMask connectivity with future support for wallet-authenticated purchases, transaction verification and secure digital delivery systems.",
+        completed: true
       },
       {
         title: "Modulr Design System",
         description:
-          "Creating a premium UI framework with reusable components, motion systems, responsive layouts and scalable frontend architecture for future platform expansion."
+          "Creating a premium UI framework with reusable components, motion systems, responsive layouts and scalable frontend architecture for future platform expansion.",
+        completed: true
       }
     ],
     expansion: "2 new premium components will be launched during the quarter."

@@ -5,7 +5,7 @@ export type MarketplaceCategory =
   | "Wallet Infrastructure"
   | "Automation"
   | "AI Systems";
-export type MarketplaceDifficulty = "Intermediate" | "Advanced";
+export type MarketplaceDifficulty = "Beginner" | "Intermediate" | "Advanced";
 export type MarketplaceCategoryStatus = "Active" | "Planned";
 
 export interface MarketplaceCategoryDefinition {

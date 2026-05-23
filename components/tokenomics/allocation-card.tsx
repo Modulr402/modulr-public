@@ -39,6 +39,18 @@ export function AllocationCard({ allocation, index }: AllocationCardProps) {
         </span>
       </div>
       <p className="mt-6 leading-7 text-slate-400">{allocation.description}</p>
+      {allocation.moduLocked !== undefined && (
+        <div className="mt-5 border border-teal-300/20 bg-teal-300/[0.04] p-3">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-teal-400">$MODU Locked</p>
+          <p className="mt-1 font-mono text-2xl font-semibold text-white">{allocation.moduLocked} <span className="text-sm text-teal-300">$MODU</span></p>
+        </div>
+      )}
+      {allocation.walletAddress && (
+        <div className="mt-3 border border-white/[0.08] bg-slate-950/50 p-3">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">Wallet Address</p>
+          <p className="mt-1.5 break-all font-mono text-xs text-slate-300">{allocation.walletAddress}</p>
+        </div>
+      )}
     </motion.article>
   );
 }

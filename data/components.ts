@@ -68,6 +68,37 @@ export const marketplaceProducts: MarketplaceProduct[] = [
     ]
   },
   {
+    slug: "token-site-generator",
+    title: "Token Website Generator",
+    category: "Launch Infrastructure",
+    description:
+      "Generate a complete, production-ready token launch website from your project details. AI-powered, fully responsive, single HTML file with inline CSS, animations and a copy-CA button. Four style vibes: minimal, aggressive, professional or neon.",
+    shortDescription:
+      "AI-generated token launch websites. Input your details, choose a vibe, download a complete HTML file.",
+    price: "3 USDC",
+    difficulty: "Beginner",
+    version: "v1.0.0",
+    lastUpdated: "May 19, 2026",
+    compatibility: ["Solana tokens", "EVM tokens", "Any launch"],
+    infrastructureTags: ["AI generation", "Launch infrastructure", "Site builder"],
+    futureApiSupport: false,
+    walletAware: true,
+    featured: true,
+    trending: true,
+    features: [
+      "AI-generated complete HTML site",
+      "4 style vibes: minimal, aggressive, professional, neon",
+      "Hero, tokenomics, roadmap, how-to-buy, socials sections",
+      "Copy CA button, smooth scroll, mobile responsive",
+      "Single file download, deploy anywhere"
+    ],
+    useCases: [
+      "Launching a new Solana or EVM token with no web development experience",
+      "Getting a production-ready site in under 60 seconds",
+      "Customizing the generated site or hosting it on Vercel, Netlify or GitHub Pages"
+    ]
+  },
+  {
     slug: "smart-contract-audit-summary",
     title: "Smart Contract Audit Summary",
     category: "Security",
@@ -118,7 +149,7 @@ export const marketplaceCategoryDefinitions: MarketplaceCategoryDefinition[] = [
   {
     name: "Wallet Infrastructure",
     description: "Wallet-aware access, authentication and future ownership verification systems.",
-    status: "Planned"
+    status: "Active"
   },
   {
     name: "Automation",
@@ -145,7 +176,7 @@ export const marketplaceCategories: Array<MarketplaceCategory | "All"> = [
 export const marketplaceStats: MarketplaceStatistic[] = [
   {
     label: "Active Components",
-    value: "3",
+    value: "4",
     detail: "Initial infrastructure listings"
   },
   {
@@ -153,11 +184,7 @@ export const marketplaceStats: MarketplaceStatistic[] = [
     value: "3",
     detail: "Phantom, Solflare and MetaMask UI"
   },
-  {
-    label: "Marketplace Transactions",
-    value: "0",
-    detail: "Real payment execution is not active yet"
-  },
+
   {
     label: "Supported Infrastructure Layers",
     value: "6",
