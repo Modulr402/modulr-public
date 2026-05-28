@@ -24,7 +24,13 @@ export const roadmap: RoadmapQuarter[] = [
         description:
           "Creating a premium UI framework with reusable components, motion systems, responsive layouts and scalable frontend architecture for future platform expansion.",
         completed: true
-      }
+      },
+      {
+        title: "$MODU Payment System",
+        description:
+          "Native $MODU payment support live alongside USDC. One-click checkout via connected wallet, on-chain verification via Helius, automatic holder discount tiers (10–30% off), and burn tracking for all $MODU paid.",
+        completed: true
+      },
     ],
     expansion: "2 new premium components will be launched during the quarter."
   },
@@ -37,17 +43,17 @@ export const roadmap: RoadmapQuarter[] = [
       {
         title: "Modulr SDK",
         description:
-          "Launching the first Modulr SDK allowing developers to integrate Modulr systems, wallet-aware infrastructure and marketplace utilities directly into external applications."
+          "Launching the first Modulr SDK allowing developers to integrate Modulr tools programmatically into external applications. Includes $MODU-gated API tiers, structured JSON output, webhook delivery, and usage-based pricing tied directly to on-chain $MODU holdings."
       },
       {
-        title: "$MODU Payment Infrastructure",
+        title: "On-Chain Referral System",
         description:
-          "Adding native $MODU payment support alongside USDC with wallet-based checkout flows, transaction states and marketplace unlock systems."
+          "Wallet-based referral tracking where users earn $MODU rewards for bringing new buyers to the platform. Referrals are verified on-chain and rewards are distributed automatically per verified purchase."
       },
       {
-        title: "Secure Digital Delivery",
+        title: "Creator Submission Layer",
         description:
-          "Building wallet-authenticated delivery infrastructure with protected downloads, ownership verification and version-controlled marketplace access."
+          "Opening Modulr for external tool submissions. Creators can submit, price and publish their own tools to the marketplace, with on-chain revenue attribution and direct wallet payouts."
       }
     ],
     expansion: "2 new premium components will be launched during the quarter."
