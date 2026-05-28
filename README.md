@@ -1,8 +1,8 @@
 # modulr-public
 
-Public source reference for the [Modulr](https://x.com/Modulr402) x402 AI component marketplace. Contains non-sensitive frontend components, data structures and type definitions for transparency and developer reference.
+Public source reference for the [Modulr](https://x.com/Modulr402) AI component marketplace. Contains non-sensitive frontend components, data structures and type definitions for transparency and developer reference.
 
-This repository does not include payment logic, API routes, wallet adapters or access control systems. For the live platform visit [modulr.xyz](https://modulr.xyz).
+This repository does not include payment logic, API routes, wallet adapters or access control systems. For the live platform visit [modulr402.com](https://modulr402.com).
 
 ---
 
@@ -45,3 +45,4 @@ Utility functions and site configuration.
 
 - Platform: [modulr402.com](https://modulr402.com/)
 - X: [@Modulr402](https://x.com/Modulr402)
+
