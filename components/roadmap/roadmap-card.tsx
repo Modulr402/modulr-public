@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Boxes, ChevronRight } from "lucide-react";
+import { Boxes, CheckCircle2, ChevronRight } from "lucide-react";
 import { StatusBadge } from "@/components/roadmap/status-badge";
 import type { RoadmapQuarter } from "@/types/roadmap";
 
@@ -51,7 +51,7 @@ export function RoadmapCard({ quarter, index }: RoadmapCardProps) {
           <p className="mt-2 leading-7 text-slate-300">{quarter.focus}</p>
         </div>
 
-        <div className="mt-7 space-y-4">
+        <div className="mt-7 max-h-[340px] space-y-4 overflow-y-auto pr-1 [scrollbar-color:rgba(94,234,212,0.3)_transparent] [scrollbar-width:thin]">
           {quarter.items.map((item, itemIndex) => (
             <motion.div
               key={item.title}
@@ -59,15 +59,26 @@ export function RoadmapCard({ quarter, index }: RoadmapCardProps) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.45, delay: index * 0.06 + itemIndex * 0.08 }}
-              className="group border border-white/[0.08] bg-slate-950/[0.45] p-4 transition hover:border-teal-300/25 hover:bg-teal-300/[0.045]"
+              className={`group border p-4 transition ${
+                item.completed
+                  ? "border-teal-300/30 bg-teal-300/[0.06]"
+                  : "border-white/[0.08] bg-slate-950/[0.45] hover:border-teal-300/25 hover:bg-teal-300/[0.045]"
+              }`}
             >
               <div className="flex items-start gap-3">
-                <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center border border-white/10 bg-white/[0.05] font-mono text-xs text-teal-100">
-                  {itemIndex + 1}
-                </span>
+                {item.completed ? (
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal-400" />
+                ) : (
+                  <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center border border-white/10 bg-white/[0.05] font-mono text-xs text-teal-100">
+                    {itemIndex + 1}
+                  </span>
+                )}
                 <div>
-                  <h3 className="text-base font-medium text-white">{item.title}</h3>
+                  <h3 className={`text-base font-medium ${item.completed ? "text-teal-100" : "text-white"}`}>{item.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-slate-400">{item.description}</p>
+                  {item.completed && (
+                    <p className="mt-2 font-mono text-[10px] uppercase tracking-wider text-teal-400">Completed</p>
+                  )}
                 </div>
               </div>
             </motion.div>
