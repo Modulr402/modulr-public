@@ -6,7 +6,7 @@ export const tokenAllocations: TokenAllocation[] = [
     percentage: 70,
     summary: "Development and operations",
     description:
-      "Used for development, infrastructure, operations, marketplace expansion, SDK work, security, hosting and long-term Modulr growth.",
+      "Used for development, infrastructure, operations, marketplace expansion, SDK work, security, hosting and long-term Modulr growth. All $MODU received as payment on Modulr is permanently burned, separate from this distribution.",
     icon: "dev",
     walletAddress: "8KmTMWadv8cF11rYWmzcPRvu8Kvwc7YWFW2aTtJDFcTu"
   },
@@ -18,7 +18,7 @@ export const tokenAllocations: TokenAllocation[] = [
       "Used for weekly $MODU buybacks. Bought-back $MODU is locked for 6 months to support long-term ecosystem alignment.",
     icon: "buyback",
     walletAddress: "7ruKgwFFMjwSb3vuQjtioiUFU4wLvUR37Wu6UY7THtqF",
-    moduLocked: "0"
+    moduLocked: "1,560,952"
   },
   {
     label: "Giveaway Wallet",
