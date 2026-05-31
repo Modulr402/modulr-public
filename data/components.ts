@@ -12,29 +12,33 @@ export const marketplaceProducts: MarketplaceProduct[] = [
     title: "Wallet Risk Report Generator",
     category: "Analytics",
     description:
-      "Generate structured behavioral and activity-based wallet risk reports using transaction analysis, wallet activity patterns and risk signal summaries.",
+      "Generate deep on-chain wallet risk reports powered by real Helius RPC data. Fetches up to 1,000 transactions to score wallet age, activity, token diversity, balance consistency and dormancy — then layers in protocol detection, NFT count, wallet type classification, funding source, activity timeline and a plain-English verdict.",
     shortDescription:
-      "Structured wallet risk reports based on transaction behavior, activity patterns and signal summaries.",
+      "On-chain wallet risk reports with protocol detection, wallet type classification, activity timeline and verdict.",
     price: "0.25 USDC",
     difficulty: "Intermediate",
-    version: "v0.1.0",
-    lastUpdated: "May 15, 2026",
-    compatibility: ["Wallet activity data", "Risk reports", "CSV-ready output"],
-    infrastructureTags: ["Wallet intelligence", "Behavioral analytics", "Research workflow"],
+    version: "v0.2.0",
+    lastUpdated: "May 29, 2026",
+    compatibility: ["Solana wallets", "Risk reports", "Multi-format export"],
+    infrastructureTags: ["Wallet intelligence", "On-chain analytics", "Risk scoring"],
     futureApiSupport: true,
     walletAware: true,
     featured: true,
     trending: true,
     features: [
-      "Behavioral wallet activity summary",
-      "Transaction pattern review structure",
-      "Risk signal categorization",
-      "Report-ready output format"
+      "Wallet type classification: DeFi Trader, NFT Collector, Whale, Pump.fun Trader and more",
+      "Protocol detection: Raydium, Jupiter, Orca, Magic Eden, pump.fun and more",
+      "NFT holdings count via Helius DAS API",
+      "Analysis verdict — plain-English risk summary with key callouts",
+      "Per-dimension confidence indicators on all 5 score components",
+      "12-month activity timeline bar chart",
+      "Counterparty analysis with pattern detection",
+      "Funding source detection from oldest transaction"
     ],
     useCases: [
-      "Reviewing wallet activity before counterparty interaction",
-      "Preparing internal wallet risk notes",
-      "Summarizing high-level wallet behavior for research workflows"
+      "Vetting a wallet before a trade, deal or counterparty interaction",
+      "Identifying bot wallets, fresh wallets or dormant whales",
+      "Due diligence on team or investor wallets before a token launch"
     ]
   },
   {
@@ -42,29 +46,32 @@ export const marketplaceProducts: MarketplaceProduct[] = [
     title: "Token Launch Checklist Generator",
     category: "Launch Infrastructure",
     description:
-      "Generate structured launch preparation checklists covering liquidity preparation, wallet setup, deployment readiness and operational launch planning.",
+      "Generate a structured token launch readiness checklist with optional on-chain verification. Paste your Solana mint address to auto-fetch mint authority, freeze authority, token metadata and liquidity pool status via Helius — then compare against what you claimed. Flags discrepancies, scores 7 readiness sections and delivers a plain-English launch verdict.",
     shortDescription:
-      "Launch readiness checklists for liquidity preparation, wallet setup and operational planning.",
+      "Launch readiness checklist with on-chain verification, discrepancy flagging and a go/no-go verdict.",
     price: "0.5 USDC",
     difficulty: "Intermediate",
-    version: "v0.1.0",
-    lastUpdated: "May 15, 2026",
-    compatibility: ["Solana launches", "EVM launches", "Operational planning"],
-    infrastructureTags: ["Launch operations", "Readiness systems", "Deployment workflow"],
+    version: "v0.2.0",
+    lastUpdated: "May 29, 2026",
+    compatibility: ["Solana launches", "EVM launches", "Any token project"],
+    infrastructureTags: ["Launch operations", "On-chain verification", "Readiness scoring"],
     futureApiSupport: true,
     walletAware: false,
     featured: true,
-    trending: false,
+    trending: true,
     features: [
-      "Launch preparation checklist structure",
-      "Liquidity and wallet setup planning",
-      "Deployment readiness categories",
-      "Operational launch review prompts"
+      "On-chain verification: mint authority, freeze authority, metadata and liquidity pools via Helius",
+      "Discrepancy flagging — compares your claimed status against what the chain actually shows",
+      "Launch verdict paragraph with go/no-go assessment",
+      "Per-section blockers with Critical, High and Medium impact labels",
+      "Readiness score across 7 weighted sections",
+      "Risk flags and recommended next steps",
+      "Works without mint address for non-Solana or pre-deploy projects"
     ],
     useCases: [
-      "Planning token launch preparation steps",
-      "Coordinating technical and operational readiness",
-      "Creating reusable pre-launch review templates"
+      "Verifying your token is actually ready before launch day",
+      "Catching security gaps like live mint authority or missing liquidity before going public",
+      "Getting a structured pre-launch review without hiring a consultant"
     ]
   },
   {
@@ -103,29 +110,32 @@ export const marketplaceProducts: MarketplaceProduct[] = [
     title: "Smart Contract Audit Summary",
     category: "Security",
     description:
-      "Generate structured audit-style summaries from smart contract notes, architecture explanations or pasted code segments.",
+      "Paste Solidity, Rust/Anchor or Move code and get a heuristic audit summary across 30+ vulnerability patterns and 8 gas optimisation checks. Outputs a security risk score, a separate code quality score, severity-ranked findings, a gas optimisation section, a security checklist, suggested fixes and an executive summary with a clear deploy recommendation.",
     shortDescription:
-      "Audit-style summaries from contract notes, architecture explanations or pasted code segments.",
+      "30+ pattern heuristic audit with gas optimisation, code quality score and deploy recommendation.",
     price: "1 USDC",
     difficulty: "Advanced",
-    version: "v0.1.0",
-    lastUpdated: "May 15, 2026",
-    compatibility: ["Solidity notes", "Architecture docs", "Code review briefs"],
-    infrastructureTags: ["Security review", "Audit preparation", "Technical reporting"],
+    version: "v0.2.0",
+    lastUpdated: "May 29, 2026",
+    compatibility: ["Solidity", "Rust / Anchor", "Move"],
+    infrastructureTags: ["Security review", "Audit preparation", "Gas optimisation"],
     futureApiSupport: true,
     walletAware: false,
     featured: false,
     trending: true,
     features: [
-      "Audit-style summary format",
-      "Architecture and code note parsing structure",
-      "Security review categories",
-      "Findings-oriented documentation output"
+      "30+ security vulnerability patterns across Critical, High, Medium, Low and Informational",
+      "Gas optimisation section: 8 patterns covering storage loops, redundant writes, type inefficiencies and more",
+      "Code quality score (0–100) measuring documentation, standards usage and validation patterns",
+      "Executive summary with deploy recommendation: Deploy, Deploy with caution, Address findings first or Do not deploy",
+      "Security checklist with Pass, Warning and Fail status per check",
+      "Suggested fixes for every detected pattern",
+      "Positive signals highlighting good security practices in use"
     ],
     useCases: [
-      "Summarizing early smart contract review notes",
-      "Preparing audit handoff documentation",
-      "Organizing architecture-level security observations"
+      "Pre-audit review before sending a contract to a professional auditor",
+      "Catching common vulnerabilities and gas inefficiencies before deployment",
+      "Getting a quick security and quality baseline on any contract"
     ]
   }
 ];
