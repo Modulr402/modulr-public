@@ -18,7 +18,7 @@ export const tokenAllocations: TokenAllocation[] = [
       "Used for weekly $MODU buybacks. Bought-back $MODU is locked for 6 months to support long-term ecosystem alignment.",
     icon: "buyback",
     walletAddress: "7ruKgwFFMjwSb3vuQjtioiUFU4wLvUR37Wu6UY7THtqF",
-    moduLocked: "1,560,952"
+    moduLocked: "7,941,052"
   },
   {
     label: "Giveaway Wallet",
