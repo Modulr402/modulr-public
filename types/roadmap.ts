@@ -1,8 +1,9 @@
-export type RoadmapStatus = "In Progress" | "Planned" | "Research" | "Scaling";
+export type RoadmapStatus = "Complete" | "In Progress" | "Planned" | "Research" | "Scaling";
 
 export interface RoadmapItem {
   title: string;
   description: string;
+  completed?: boolean;
 }
 
 export interface RoadmapQuarter {

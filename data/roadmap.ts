@@ -4,7 +4,7 @@ export const roadmap: RoadmapQuarter[] = [
   {
     quarter: "Q2 2026",
     title: "Foundation Layer",
-    status: "In Progress",
+    status: "Complete",
     focus: "Building the core Modulr infrastructure and marketplace foundation.",
     items: [
       {
@@ -31,6 +31,12 @@ export const roadmap: RoadmapQuarter[] = [
           "Native $MODU payment support live alongside USDC. One-click checkout via connected wallet, on-chain verification via Helius, automatic holder discount tiers (10–30% off), and burn tracking for all $MODU paid.",
         completed: true
       },
+      {
+        title: "Modulr SDK",
+        description:
+          "The official TypeScript SDK for the Modulr API. Developers can integrate wallet risk, token launch and smart contract audit directly into their own applications with a single install and no setup required.",
+        completed: true
+      },
     ],
     expansion: "2 new premium components will be launched during the quarter."
   },
@@ -41,9 +47,9 @@ export const roadmap: RoadmapQuarter[] = [
     focus: "Turning Modulr into a functional crypto-native developer marketplace.",
     items: [
       {
-        title: "Modulr SDK",
+        title: "Webhook & Event Infrastructure",
         description:
-          "Launching the first Modulr SDK allowing developers to integrate Modulr tools programmatically into external applications. Includes $MODU-gated API tiers, structured JSON output, webhook delivery, and usage-based pricing tied directly to on-chain $MODU holdings."
+          "Real-time push infrastructure allowing developers to subscribe to Modulr events via webhooks. Receive instant notifications on analysis completion, risk threshold breaches and on-chain activity — enabling fully automated workflows without polling.",
       },
       {
         title: "On-Chain Referral System",

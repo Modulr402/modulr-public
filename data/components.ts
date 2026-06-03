@@ -106,6 +106,38 @@ export const marketplaceProducts: MarketplaceProduct[] = [
     ]
   },
   {
+    slug: "ai-agent-generator",
+    title: "AI Agent Generator",
+    category: "AI Systems",
+    description:
+      "Describe the agent you want and get a production-ready TypeScript script back. Specify the agent type, target chain, trigger conditions, parameters and framework — Modulr generates a complete, runnable agent with setup instructions, required environment variables and inline comments explaining every decision.",
+    shortDescription:
+      "Describe your agent, get a production-ready TypeScript script. Trading bots, wallet monitors, DeFi automation and more.",
+    price: "2 USDC",
+    difficulty: "Intermediate",
+    version: "v1.0.0",
+    lastUpdated: "Jun 3, 2026",
+    compatibility: ["Solana", "Ethereum", "Base", "Arbitrum"],
+    infrastructureTags: ["AI generation", "Agent infrastructure", "Script output"],
+    futureApiSupport: true,
+    walletAware: true,
+    featured: true,
+    trending: true,
+    features: [
+      "8 agent types: Trading Bot, Wallet Monitor, Price Alert, DeFi Automation, NFT Sniper, Portfolio Tracker, Liquidity Manager and Custom",
+      "Multi-chain: Solana, Ethereum, Base, Arbitrum",
+      "Framework selection: Vanilla TypeScript, Anchor, Ethers.js or Viem",
+      "Trigger condition and parameter specification",
+      "Complete script with setup instructions and required environment variables",
+      "Single-file TypeScript download, ready to run"
+    ],
+    useCases: [
+      "Building a custom trading or monitoring agent without writing boilerplate from scratch",
+      "Generating a starting point for DeFi automation on any supported chain",
+      "Getting a structured agent script with setup instructions for deployment"
+    ]
+  },
+  {
     slug: "smart-contract-audit-summary",
     title: "Smart Contract Audit Summary",
     category: "Security",
@@ -169,7 +201,7 @@ export const marketplaceCategoryDefinitions: MarketplaceCategoryDefinition[] = [
   {
     name: "AI Systems",
     description: "AI-assisted infrastructure for reporting, analysis and advanced developer workflows.",
-    status: "Planned"
+    status: "Active"
   }
 ];
 
@@ -186,7 +218,7 @@ export const marketplaceCategories: Array<MarketplaceCategory | "All"> = [
 export const marketplaceStats: MarketplaceStatistic[] = [
   {
     label: "Active Components",
-    value: "4",
+    value: "5",
     detail: "Initial infrastructure listings"
   },
   {

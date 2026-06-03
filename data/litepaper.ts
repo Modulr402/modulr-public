@@ -7,7 +7,7 @@ export const litepaperSections: LitepaperSection[] = [
     title: "Introduction",
     body: [
       "Modulr is a live, on-chain marketplace for technical crypto tools. Users connect a Solana wallet, pay in USDC or $MODU, and receive immediate access to professional-grade reports, audits and analytics. No accounts, no subscriptions, no friction.",
-      "Four tools are live today: a Wallet Risk Report powered by real on-chain RPC data, a Token Launch Checklist with structured readiness scoring, a Smart Contract Audit that runs heuristic pattern scanning against Solidity, Rust/Anchor and Move contracts, and a Token Website Generator that produces complete production-ready token launch sites from project details. Each tool is pay-per-use: one payment generates one output, exported in the format you choose."
+      "Five tools are live today: a Wallet Risk Report powered by real on-chain RPC data, a Token Launch Checklist with structured readiness scoring, a Smart Contract Audit that runs heuristic pattern scanning against Solidity, Rust/Anchor and Move contracts, a Token Website Generator that produces complete production-ready token launch sites from project details, and an AI Agent Generator that produces complete TypeScript agent scripts for trading, monitoring, DeFi automation and more. Each tool is pay-per-use: one payment generates one output, exported in the format you choose."
     ]
   },
   {
@@ -60,17 +60,17 @@ export const litepaperSections: LitepaperSection[] = [
     eyebrow: "05",
     title: "Live Tools",
     body: [
-      "Four tools are available on Modulr today. Each is purpose-built for a specific crypto due diligence or launch workflow, runs entirely in-browser, and produces professional-grade output.",
-      "The Wallet Risk Report fetches up to 1,000 on-chain transactions via Helius RPC, computes a heuristic risk score across five dimensions (wallet age, activity level, token diversity, balance consistency and dormancy) and outputs a full report with signals, explainability and score breakdown. The Token Launch Checklist takes project inputs and produces a structured readiness score with section-level analysis, risk flags and recommended next steps. The Smart Contract Audit scans pasted contract code or architecture notes for 16 vulnerability pattern categories, producing severity-ranked findings, a security checklist, suggested fixes and positive signals. The Token Website Generator takes token details and a style vibe and produces a complete, production-ready HTML site with all standard sections, copy-CA button and mobile responsiveness — downloadable as a ZIP."
+      "Five tools are available on Modulr today. Each is purpose-built for a specific crypto workflow, runs entirely in-browser, and produces professional-grade output.",
+      "The Wallet Risk Report fetches up to 1,000 on-chain transactions via Helius RPC, computes a heuristic risk score across five dimensions (wallet age, activity level, token diversity, balance consistency and dormancy) and outputs a full report with signals, explainability and score breakdown. The Token Launch Checklist takes project inputs and produces a structured readiness score with section-level analysis, risk flags and recommended next steps. The Smart Contract Audit scans pasted contract code for 30+ vulnerability patterns across Solidity, Rust/Anchor and Move, producing severity-ranked findings, a security checklist, suggested fixes and positive signals. The Token Website Generator takes token details and a style vibe and produces a complete, production-ready HTML site — downloadable as a ZIP. The AI Agent Generator takes a description and produces a complete, runnable TypeScript agent script for trading, monitoring, DeFi automation and more — with setup instructions, required environment variables and a one-click ZIP download."
     ],
     points: [
       "Wallet Risk Report: real on-chain scoring across 5 dimensions",
       "Token Launch Checklist: structured readiness score with risk flags",
-      "Smart Contract Audit: 16-pattern heuristic vulnerability scanner",
+      "Smart Contract Audit: 30+ pattern heuristic vulnerability scanner across Solidity, Rust/Anchor and Move",
       "Token Website Generator: AI-generated production-ready token launch sites",
+      "AI Agent Generator: complete TypeScript agent scripts with streaming output",
       "All tools export to PDF, HTML, MD, TXT, JSON or ZIP",
-      "Reports permanently saved and re-downloadable from dashboard",
-      "More tools in development"
+      "Reports permanently saved and re-downloadable from dashboard"
     ]
   },
   {
@@ -78,16 +78,16 @@ export const litepaperSections: LitepaperSection[] = [
     eyebrow: "06",
     title: "Modulr SDK",
     body: [
-      "The Modulr SDK is planned as a developer-facing integration layer that exposes marketplace functionality to external applications.",
-      "The SDK will allow developers to embed Modulr tools into their own workflows, triggering wallet risk analysis, contract audits or launch checklists programmatically and receiving structured output without the browser interface. API access, webhook delivery and integration primitives are on the roadmap."
+      "The Modulr SDK is live. Developers can install it with a single command and call Modulr's tools programmatically — no API key, no setup, no browser required.",
+      "The SDK exposes wallet risk analysis, token launch checklists, smart contract audit and AI agent generation as typed TypeScript modules. Install with npm install @modulr/sdk, import the Modulr class and start calling tools directly from any TypeScript or Node.js application. Full documentation is available at modulr402.com/developers."
     ],
     points: [
+      "npm install @modulr/sdk — zero config, works immediately",
       "Programmatic access to all Modulr tools",
+      "Typed TypeScript modules for every tool",
       "Structured JSON output for downstream use",
-      "Webhook delivery support",
-      "API key management",
-      "External application integrations",
-      "$MODU-gated API tiers planned"
+      "No API key required",
+      "Full docs at modulr402.com/developers"
     ]
   },
   {
